@@ -7,33 +7,56 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='About',
+            name="About",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('Nosotros', models.CharField(max_length=300)),
-                ('descripcion', models.CharField(max_length=500)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("Nosotros", models.CharField(max_length=300)),
+                ("descripcion", models.CharField(max_length=500)),
             ],
         ),
         migrations.CreateModel(
-            name='Blog',
+            name="Blog",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('titulo', models.CharField(max_length=60)),
-                ('subtitulo', models.CharField(max_length=60)),
-                ('autor', models.CharField(max_length=40)),
-                ('fecha', models.DateField(null=True)),
-                ('cuerpo', models.CharField(max_length=3500)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("titulo", models.CharField(max_length=60)),
+                ("subtitulo", models.CharField(max_length=60)),
+                ("autor", models.CharField(max_length=40)),
+                ("fecha", models.DateField(null=True)),
+                ("cuerpo", models.CharField(max_length=3500)),
             ],
         ),
         migrations.CreateModel(
-            name='Inicio',
+            name="Inicio",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
             ],
         ),
     ]

@@ -5,11 +5,12 @@ from django.db import models
 class Inicio(models.Model):
     pass
 
+
 class About(models.Model):
     Nosotros = models.CharField(max_length=300)
     descripcion = models.CharField(max_length=500)
-    
-    
+       
+
 class Blog(models.Model):
     titulo = models.CharField(max_length=60)
     subtitulo = models.CharField(max_length=60)
@@ -17,14 +18,11 @@ class Blog(models.Model):
     fecha = models.DateField(null=True)
     cuerpo = models.CharField(max_length=3500)
     
-
-
+class Registrate(models.Model):
+    email = models.CharField(max_length=60)
+    contraseña = models.CharField(max_length=10)
+    nombre_usuario = models.CharField(max_length=30)
     
-    
-    
-    
-    
-    
-
-
+class Perfil(models.Model):
+    pass
     
