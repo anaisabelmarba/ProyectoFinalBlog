@@ -8,7 +8,7 @@ class Inicio(models.Model):
 
 class About(models.Model):
     Nosotros = models.CharField(max_length=300)
-    descripcion = models.CharField(max_length=500)
+    Acerca_de = models.CharField(max_length=500)
        
 
 class Blog(models.Model):
@@ -24,5 +24,8 @@ class Registrate(models.Model):
     nombre_usuario = models.CharField(max_length=30)
     
 class Perfil(models.Model):
-    pass
+    nombre = models.CharField(max_length=60)
+    descripcion = models.CharField(max_length=100)
+    
+    
     
