@@ -9,11 +9,12 @@ class About(models.Model):
     Nosotros = models.CharField(max_length=300)
     descripcion = models.CharField(max_length=500)
     
+    
 class Blog(models.Model):
     titulo = models.CharField(max_length=60)
     subtitulo = models.CharField(max_length=60)
     autor = models.CharField(max_length=40)
-    fecha = models.DateField(null - True)
+    fecha = models.DateField(null=True)
     cuerpo = models.CharField(max_length=3500)
     
 
