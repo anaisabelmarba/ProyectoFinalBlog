@@ -17,18 +17,8 @@ from django.contrib import admin
 from django.urls import path
 
 
-from blog.views import base
-from blog import views
 
 
 urlpatterns = [
-    path("base/", base),
-    path('registrateFormulario', views.registrateFormulario,),
-    path('inicio', views.inicio, name="Inicio"),
-    path('about', views.about, name="About"),
-    path('blog', views.blog, name="Blog"),
-    path('registrate', views.registrate, name="Registrate"),
-    path('perfil', views.perfil, name="Perfil"),
-    path('registrateFormulario', views.registrateFormulario)
-    
+   
     ]
